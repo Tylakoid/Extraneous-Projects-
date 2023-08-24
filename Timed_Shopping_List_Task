@@ -1,0 +1,31 @@
+print("Welcome to the shopping list creator!")
+total_input = 0
+quantity_total = [] 
+shopping_dict = {}
+while total_input<5:
+    item = input("What is the name of your item? ")
+    quantity = input("How many of it do you need? ")
+    quantity_total.append(quantity)
+    shopping_dict[item]=quantity
+    total_input += 1
+
+f = open("shopping.txt","w")
+for values in shopping_dict:
+	shopping_dicts=shopping_dict[values]
+	print("Item:", values, "Quantity:",shopping_dicts, file=f)
+final_total = [int(number) for number in quantity_total]
+total = sum(final_total[0:5])
+print("Total items:",str(total),file=f)
+f.close()
+
+"""
+shoppinglist.txt
+Item: A Quantity: 5
+Item: B Quantity: 4
+Item: C Quantity: 3
+Item: D Quantity: 2
+Item: E Quantity: 1
+Total items: 15
+"""
+
+

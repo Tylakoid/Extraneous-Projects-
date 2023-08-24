@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+        @keyframes hello{
+  0%   {background-color:pink; left:0px; top:0px;}
+  25%  {background-color:yellow; left:50px; top:0px;}
+  50%  {background-color:purple; left:50px; top:10px;}
+  75%  {background-color:orange; left:0px; top:10px;}
+  100% {background-color:beige; left:0px; top:0px;}
+        }
+
+       #animation{
+           width:350px;
+           height:35px;
+  position: relative;
+  background-color: pink;
+  animation-name: hello;
+  animation-duration: 4s;
+
+          }
+        .technology{
+            margin-right:230px;
+            border:3px solid pink;
+            border-top:15px solid pink;
+            padding:20px;
+            padding-left:29px;
+            margin-left:5px;
+        }
+        body{
+            font-family:courier;
+        }
+            span{
+                color:red;
+            }
+            #banana{
+                color:rgb(194, 204, 8);
+            }
+            h1{
+                background-image:linear-gradient(to bottom right,pink,yellow);
+                font:bold 60px courier;
+            }
+               #text{
+                   background-color:rgb(227, 175, 164);
+                   width:320px;
+                   height:150px;
+                   overflow:auto;
+                   border-radius:20px;
+                   padding:10px;
+               }
+               #squirrel{
+                   float:right;
+                   margin-right:20px;
+                   position:absolute;
+                   top:135px;
+                   right:4px;
+                   position:fixed;
+               }
+        </style>
+    </head>
+    <body>
+
+        <h1>You're invited!</h1>
+        <div id="animation">
+        <h2>To My New Years Party!</h2>
+        </div>
+        <div id="text">
+        <p>The details: We're celebrating a New Years party on the 31st of December until 12:00am, which practically makes it January 1st too! We'd love to see you there in your best New Years outfit and partying mood!<br>
+        <br>
+        Click on the partying squirrel to confirm your invitation!<br><br>
+        P.S With lots of happiness, your colleague.
+        </p>
+        </div>
+        <div id="squirrel">
+        <a href="https://docs.google.com/document/d/1nyc2jlyAlI3WlHFzm9Rw4DxZqziXw9PV3p8C5dPG8G4/edit">
+        <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/hopper-partying.png" alt="partying hopper" width="150">
+        </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <ul class="technology">
+            <li>Making sure to bring some food along!
+            </li>
+            <li>The theme is : <span>red</span> and <span id="banana">yellow</span>!</li>
+            <li>Feel free to invite <u>ONE</u> other guest with you.</li>
+
+        </ul>
+        <p class="technology">
+    <strong>Please answer the following questions :</strong><br>
+Do you have any food allergies?<br> Answer in the invitation doc, in the image link.<br>
+<br>
+Are you thinking of bringing anyone else?<br> If so, include in the invitation doc.
+        </p>
+
+    </body>
+</html>
